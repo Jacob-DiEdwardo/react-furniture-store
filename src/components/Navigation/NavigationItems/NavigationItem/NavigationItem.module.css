@@ -19,9 +19,8 @@
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a.active {
-    color: rgb(1, 163, 1);
+    color: lightskyblue;
     background-color: white;
-    border-right: 8px solid red;
 }
 
 @media (min-width: 500px) {
@@ -47,7 +46,6 @@
     .NavigationItem a.active {
         background-color: white;
         border-right: 0;
-        border-bottom: 8px solid rgb(1, 163, 1);
-        color: red;
+        color: lightskyblue;
     }
 }

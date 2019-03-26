@@ -11,7 +11,7 @@
 .Line {
     width: 35px;
     height: 5px;
-    background-color: rgb(39, 201, 61);
+    background-color: lightskyblue;
     margin: 8px 8px;
     border-radius: 2px;
 }

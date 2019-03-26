@@ -1,0 +1,10 @@
+.ShopControls {
+    height: 100vh;
+    width: 30%;
+    padding: 0 10px;
+}
+
+.ShopControls li {
+    list-style: none;
+    margin: 5px 0;
+}

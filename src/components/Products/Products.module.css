@@ -1,0 +1,15 @@
+.ProductsSection {
+    width: 100%;
+    border-left: 1px solid #ccc;
+}
+
+.Products {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.PageSelector {
+    text-align: center;
+}

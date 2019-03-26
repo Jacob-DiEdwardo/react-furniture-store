@@ -1,0 +1,16 @@
+.Banner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.Showing {
+    margin-left: 20px;
+}
+
+.ButtonContainer {
+    margin-right: 20px;
+}

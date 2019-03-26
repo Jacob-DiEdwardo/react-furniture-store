@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import Aux from '../Auxiliary/Auxiliary';
 import classes from './Layout.module.css';
 import Navbar from '../../components/Navigation/Navbar/Navbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
@@ -22,7 +21,7 @@ class Layout extends Component {
 
     render() { 
         return (  
-            <Aux>
+            <React.Fragment>
                 <Navbar 
                     menuButtonClicked={this.sideDrawerToggleHandler}
                     // isAuth={this.props.isAuthenticated}
@@ -34,7 +33,7 @@ class Layout extends Component {
                 <main className={classes.Content}>
                     {this.props.children}
                 </main>
-            </Aux>
+            </React.Fragment>
         );
     }
 }

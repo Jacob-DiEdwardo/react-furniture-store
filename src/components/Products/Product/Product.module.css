@@ -1,0 +1,6 @@
+.Product {
+    width: 30%;
+    margin: 20px 10px;
+    box-shadow: 1px 2px #ccc;
+    border: 1px solid #ccc;
+}

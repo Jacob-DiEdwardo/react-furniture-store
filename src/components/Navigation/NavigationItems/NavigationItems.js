@@ -9,7 +9,8 @@ const navigationItems = (props) => {
         navItems = (
             <ul className={classes.NavigationItems}>
                 <NavigationItem link="/">Home</NavigationItem>
-                <NavigationItem link="/pizza-builder">Pizza Builder</NavigationItem>
+                <NavigationItem link="/shop">Shop</NavigationItem>
+                <NavigationItem link="/cart">Cart</NavigationItem>
                 <NavigationItem link="/orders">Orders</NavigationItem>
                 <NavigationItem link="/logout">Logout</NavigationItem>
             </ul>
@@ -18,7 +19,7 @@ const navigationItems = (props) => {
         navItems = (
             <ul className={classes.NavigationItems}>
                 <NavigationItem link="/">Home</NavigationItem>
-                <NavigationItem link="/auth">Pizza Builder</NavigationItem>
+                <NavigationItem link="/auth">Shop</NavigationItem>
             </ul>
         );
     }

@@ -6,7 +6,7 @@ const shopControls = (props) => {
     return (
         <div className={classes.ShopControls}>
             <div>
-                <h3>Categories</h3>
+                <h4>Categories</h4>
                 <ul>
                     <li>Lamps (4)</li>
                     <li>Cabinets (4)</li>
@@ -15,7 +15,7 @@ const shopControls = (props) => {
                 </ul>
             </div>
             <div>
-                <h3>Sort By</h3>
+                <h4>Sort By</h4>
                 <ul>
                     <li>Price (low to high)</li>
                     <li>Price (high to low)</li>
@@ -23,7 +23,7 @@ const shopControls = (props) => {
                 </ul>
             </div>
             <div>
-                <h3>Price Range</h3>
+                <h4>Price Range</h4>
                 <ul>
                     <li>$49 and under</li>
                     <li>$50 to $99</li>

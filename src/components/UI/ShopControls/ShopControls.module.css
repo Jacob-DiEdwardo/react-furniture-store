@@ -4,7 +4,38 @@
     padding: 0 10px;
 }
 
+.ShopControls h4 {
+    margin: 10px;
+}
+
+.ShopControls ul {
+    padding-inline-start: 20px; 
+}
+
 .ShopControls li {
     list-style: none;
     margin: 5px 0;
+    font-size: .8em;
+}
+
+.ShopControls li:hover {
+    cursor: pointer;
+    color: lightseagreen;
+}
+
+@media (max-width: 499px) {
+    .ShopControls h4 {
+        font-size: .8em;
+    }
+    
+    .ShopControls li {
+        font-size: .6em;
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .ShopControls {
+        width: 20%;
+    }
 }

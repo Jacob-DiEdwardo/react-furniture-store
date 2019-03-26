@@ -4,3 +4,58 @@
     box-shadow: 1px 2px #ccc;
     border: 1px solid #ccc;
 }
+
+.ProductImage {
+    text-align: center;
+}
+
+.ProductImage img {
+    width: 200px;
+    padding: 10px;
+}
+
+.ProductImage img:hover {
+    cursor: pointer;
+}
+
+.Product p {
+    padding-left: 10px;
+}
+
+.Stars {
+    display: flex;
+    padding-left: 10px;
+}
+
+.Stars img {
+    width: 20px;
+    margin: 0 1px;
+}
+
+.PriceSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AddToCart button {
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    margin-right: 20px;
+    height: 25px;
+}
+
+.AddToCart button:hover {
+    cursor: pointer;
+    background-color: lightskyblue;
+}   
+
+.Quantity {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.Quantity input {
+    margin-left: 5px;
+}

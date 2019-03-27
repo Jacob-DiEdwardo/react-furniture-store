@@ -1,39 +1,39 @@
 import React from 'react';
 
 import classes from './Product.module.css';
-import TestImage from '../../../assets/images/product-0001.jpg';
 import YellowStar from '../../../assets/images/yellow-star.png';
 import GrayStar from '../../../assets/images/gray-star.png';
 
 const product = (props) => {
+    let stars = [];
+    for (let i = 1; i <= 5; i++) {
+        i <= props.rating ? 
+            stars.push(
+                <div key={i}>
+                    <img src={YellowStar} alt="star" />
+                </div>
+            ) :
+            stars.push(
+                <div key={i}>
+                    <img src={GrayStar} alt="star" />
+                </div>
+            );
+        }
+
     return (
         <div className={classes.Product}>
             <div className={classes.ProductImage}>
-                <img src={TestImage} alt="lamp" />
+                <img src={props.imageUrl} alt="productImage" />
             </div>
             <div>
-                <p>A nice lamp</p>
+                <p>{props.name}</p>
             </div>
             <div className={classes.Stars}>
-                <div>
-                    <img src={YellowStar} alt="yellow star" />
-                </div>
-                <div>
-                    <img src={YellowStar} alt="yellow star" />
-                </div>
-                <div>
-                    <img src={YellowStar} alt="yellow star" />
-                </div>
-                <div>
-                    <img src={GrayStar} alt="gray star" />
-                </div>
-                <div>
-                    <img src={GrayStar} alt="gray star" />
-                </div>
+                {stars}
             </div>
             <div className={classes.PriceSection}>
                 <div>
-                    <p>$100</p>
+                    <p>${props.price}</p>
                 </div>
                 <div className={classes.AddToCart}>
                     <button>ADD TO CART</button>

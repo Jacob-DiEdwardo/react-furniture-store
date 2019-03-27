@@ -7,11 +7,15 @@
 
 .ProductImage {
     text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: auto;
 }
 
 .ProductImage img {
     width: 200px;
-    padding: 10px;
+    height: 200px;
+    padding: 10px 0;
 }
 
 .ProductImage img:hover {
@@ -67,5 +71,6 @@
 @media (max-width: 999px) {
     .ProductImage img {
         width: 80%;
+        height: 80%;
     }
 }

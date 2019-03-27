@@ -1,0 +1,10 @@
+.PageSelector {
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.PageSelector:hover {
+    cursor: pointer;
+    color: lightseagreen;
+}

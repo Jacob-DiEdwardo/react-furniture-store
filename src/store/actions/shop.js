@@ -25,3 +25,10 @@ export const fetchProducts = () => {
             });
     };
 };
+
+export const updateProductPage = (page) => {
+    return {
+        type: actionTypes.UPDATE_PRODUCT_PAGE,
+        page: page
+    }
+}

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import classes from './Shop.module.css';
 import Banner from '../../components/UI/Banner/Banner';
 import CartButton from '../../components/UI/CartButton/CartButton';
-import ShopControls from '../../components/UI/ShopControls/ShopControls';
+import ShopControls from '../../components/ShopControls/ShopControls';
 import Products from '../../components/Products/Products';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import axios from '../../axios-shop';
@@ -18,35 +18,45 @@ class Shop extends Component {
     }
 
     render() { 
-        let products = this.props.error ? <p>Products could not be loaded</p> : <Loader />
+        let shop = this.props.error ? <p>Products could not be loaded</p> : <Loader />
         if (this.props.products) {
-            products = <Products inventory={this.props.products} />
+            shop = (
+                <div>
+                    <Banner 
+                        currentPage={this.props.page} 
+                        itemsPerPage={this.props.itemsPerPage}
+                        inventory={this.props.products} >
+                        <CartButton />
+                    </Banner>
+                    <div className={classes.Shop}>
+                        <ShopControls />
+                        <Products 
+                                inventory={this.props.products} 
+                                updatePage={this.props.onUpdateProductPage}
+                                currentPage={this.props.page}
+                                itemsPerPage={this.props.itemsPerPage} />
+                    </div>
+                </div>
+            );
         }
 
-        return (
-            <div>
-                <Banner>
-                    <CartButton />
-                </Banner>
-                <div className={classes.Shop}>
-                    <ShopControls />
-                    {products}
-                </div>
-            </div>
-        );
+        return shop;
     }
 }
 
 const mapStateToProps = state => {
     return {
         products: state.shop.products,
-        error: state.shop.error
+        error: state.shop.error,
+        page: state.shop.currentProductPage,
+        itemsPerPage: state.shop.itemsPerPage
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        onFetchProducts: () => dispatch(actions.fetchProducts())
+        onFetchProducts: () => dispatch(actions.fetchProducts()),
+        onUpdateProductPage: (page) => dispatch(actions.updateProductPage(page))
     };
 };
  

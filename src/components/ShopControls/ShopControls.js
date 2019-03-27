@@ -9,7 +9,7 @@ const shopControls = (props) => {
                 <h4>Categories</h4>
                 <ul>
                     <li>Lamps (4)</li>
-                    <li>Cabinets (4)</li>
+                    <li>Storage Cabinets (4)</li>
                     <li>Dining Sets (4)</li>
                     <li>End Tables (4)</li>
                 </ul>

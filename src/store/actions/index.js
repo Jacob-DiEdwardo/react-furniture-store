@@ -1,3 +1,4 @@
 export {
-    fetchProducts
+    fetchProducts,
+    updateProductPage
 } from './shop';

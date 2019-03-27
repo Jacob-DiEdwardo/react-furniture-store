@@ -10,7 +10,9 @@
     justify-content: center;
 }
 
-.PageSelector {
-    text-align: center;
+.PageSelectors {
+    display: flex;
+    justify-content: center;
     border-top: 1px solid #ccc;
+    padding: 20px 0;
 }

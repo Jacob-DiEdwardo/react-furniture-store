@@ -5,7 +5,7 @@ import classes from './CartButton.module.css';
 const cartButton = (props) => {
     return (
         <div className={classes.CartButton}>
-            <button>Cart Button</button>
+            <button>Cart: 0</button>
         </div>
     );
 }

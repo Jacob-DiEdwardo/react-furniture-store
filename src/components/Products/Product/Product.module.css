@@ -59,3 +59,13 @@
 .Quantity input {
     margin-left: 5px;
 }
+
+.Quantity input:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 999px) {
+    .ProductImage img {
+        width: 80%;
+    }
+}

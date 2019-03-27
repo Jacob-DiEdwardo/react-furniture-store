@@ -1,7 +1,13 @@
-.CartButton {
-    border: 1px solid red;
+.CartButton button {
+    border: none;
+    background-color: gold;
+    color: darkblue;
+    width: 150px;
+    height: 30px;
+    font-weight: bold
 }
 
 .CartButton button:hover {
     cursor: pointer;
+    background-color: goldenrod;
 }

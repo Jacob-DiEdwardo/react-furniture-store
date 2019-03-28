@@ -19,7 +19,7 @@ const navigationItems = (props) => {
         navItems = (
             <ul className={classes.NavigationItems}>
                 <NavigationItem link="/">Home</NavigationItem>
-                <NavigationItem link="/auth">Shop</NavigationItem>
+                <NavigationItem link="/shop">Shop</NavigationItem>
             </ul>
         );
     }
